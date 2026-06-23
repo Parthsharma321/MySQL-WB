@@ -20,7 +20,7 @@
 
 ## 📱 Screenshots
 
-| Dashboard | Query Editor | Results | Schema Explorer |
+| Dashboard | Query Editor | Results | Tutorial |
 |-----------|-------------|---------|-----------------|
 | ![Dashboard](screenshots/1.jpg) | ![Editor](screenshots/6.jpg) | ![Results](screenshots/3.jpg) | ![Tutorial](screenshots/4.jpg) |
 
