@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Database name (letters, numbers, underscores):"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/et_db_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. my_database"
+        android:inputType="text"
+        android:textSize="15sp"
+        android:fontFamily="monospace"
+        android:autofillHints="off"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="💡 Tip: Use snake_case names like school_db or ecommerce_2024"
+        android:textColor="@color/text_hint"
+        android:textSize="11sp"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

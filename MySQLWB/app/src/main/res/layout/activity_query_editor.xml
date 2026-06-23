@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:titleTextColor="@color/text_on_primary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/PopupTheme"/>
+
+    <!-- Database Indicator Bar -->
+    <LinearLayout
+        android:id="@+id/db_indicator_bar"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="#1A2A3A"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="14dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DB:"
+            android:textColor="#778899"
+            android:textSize="11sp"
+            android:fontFamily="monospace"/>
+
+        <TextView
+            android:id="@+id/tv_db_indicator"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="⚠ No database selected"
+            android:textColor="#E8831A"
+            android:textSize="12sp"
+            android:fontFamily="monospace"
+            android:layout_marginStart="6dp"/>
+
+        <ImageView
+            android:id="@+id/btn_undo"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="6dp"
+            android:src="@drawable/ic_undo"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Undo"
+            android:layout_marginEnd="4dp"/>
+
+        <ImageView
+            android:id="@+id/btn_redo"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:padding="6dp"
+            android:src="@drawable/ic_redo"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Redo"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:id="@+id/tv_engine_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SQLite 3"
+            android:textColor="#556677"
+            android:textSize="10sp"
+            android:fontFamily="monospace"/>
+
+    </LinearLayout>
+
+    <!-- Template Chips Scroll -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:background="@color/surface"
+        android:paddingVertical="6dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chip_group_templates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="10dp"
+            app:singleLine="true"
+            app:chipSpacingHorizontal="6dp"/>
+
+    </HorizontalScrollView>
+
+    <!-- Divider -->
+    <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/divider"/>
+
+    <!-- === QUERY EDITOR SECTION === -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:background="@color/editor_bg">
+
+        <!-- Editor Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:background="#252526"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingHorizontal="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="📝  Query Editor"
+                android:textColor="#999999"
+                android:textSize="11sp"
+                android:fontFamily="monospace"/>
+
+            <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_cursor_pos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ln 1, Col 1"
+                android:textColor="#666666"
+                android:textSize="10sp"
+                android:fontFamily="monospace"/>
+
+        </LinearLayout>
+
+        <!--
+            EDITOR BODY
+            ============================================================
+            ONE ScrollView wraps the gutter + editor side-by-side.
+            This guarantees they scroll together with zero drift.
+        -->
+        <ScrollView
+            android:id="@+id/editor_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="none"
+            android:background="@color/editor_bg"
+            android:overScrollMode="never">
+
+            <!-- SQL EDITOR -->
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editor_bg"
+                android:fillViewport="true"
+                android:scrollbars="horizontal">
+
+                <MultiAutoCompleteTextView
+                    android:id="@+id/et_query_editor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:fontFamily="monospace"
+                    android:gravity="top|start"
+                    android:imeOptions="actionDone"
+                    android:includeFontPadding="false"
+                    android:inputType="textMultiLine|textNoSuggestions|textVisiblePassword"
+                    android:lineSpacingMultiplier="1.5"
+                    android:minWidth="1000dp"
+                    android:minHeight="400dp"
+                    android:paddingStart="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingEnd="24dp"
+                    android:paddingBottom="16dp"
+                    android:scrollHorizontally="true"
+                    android:textColor="#D4D4D4"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+
+            </HorizontalScrollView>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Query Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/surface"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="8dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_run_query"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="2.5"
+            android:text="▶ Run"
+            android:textSize="12sp"
+            android:textColor="#FFFFFF"
+            app:backgroundTint="@color/success_color"
+            app:cornerRadius="8dp"
+            android:layout_marginEnd="6dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_run_selected"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="2.5"
+            android:text="▶ Selection"
+            android:textSize="11sp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="@color/primary"
+            android:textColor="@color/primary"
+            app:cornerRadius="8dp"
+            android:layout_marginEnd="6dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_format"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1.5"
+            android:text="⌘ Fmt"
+            android:textSize="11sp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="@color/card_stroke"
+            android:textColor="@color/text_secondary"
+            app:cornerRadius="8dp"
+            android:layout_marginEnd="6dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_clear"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_weight="1.2"
+            android:text="✕"
+            android:textSize="14sp"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            app:strokeColor="@color/card_stroke"
+            android:textColor="@color/error_color"
+            app:cornerRadius="8dp"/>
+
+    </LinearLayout>
+
+    <!-- Divider with label -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:background="#252526"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📊  Output / Results"
+            android:textColor="#999999"
+            android:textSize="11sp"
+            android:fontFamily="monospace"/>
+
+        <View android:layout_width="0dp" android:layout_height="1dp" android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ready"
+            android:textColor="#569CD6"
+            android:textSize="11sp"
+            android:fontFamily="monospace"/>
+
+    </LinearLayout>
+
+    <!-- === OUTPUT PANEL === -->
+    <ScrollView
+        android:id="@+id/scroll_output"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="@color/surface"
+        android:overScrollMode="ifContentScrolls">
+
+        <LinearLayout
+            android:id="@+id/layout_results"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:minHeight="120dp"/>
+
+    </ScrollView>
+
+</LinearLayout>

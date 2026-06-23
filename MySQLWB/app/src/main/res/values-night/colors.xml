@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Mode Colors - MySQL Premium Dark -->
+    <color name="primary">#00ABCC</color>
+    <color name="primary_dark">#00758F</color>
+    <color name="primary_light">#33C0D9</color>
+    <color name="accent">#FFAD33</color>
+    <color name="accent_dark">#F29111</color>
+
+    <color name="background">#0D1117</color>
+    <color name="surface">#161B22</color>
+    <color name="surface_variant">#21262D</color>
+
+    <color name="text_primary">#E6EDF3</color>
+    <color name="text_secondary">#8B949E</color>
+    <color name="text_hint">#484F58</color>
+
+    <color name="card_stroke">#30363D</color>
+    <color name="divider">#21262D</color>
+
+    <color name="table_row_normal">#161B22</color>
+    <color name="table_row_alternate">#1C2128</color>
+    <color name="table_cell_text">#C9D1D9</color>
+    <color name="table_border">#30363D</color>
+    <color name="table_header_bg">#0D1117</color>
+
+    <!-- Splash -->
+    <color name="splash_bg">#0D1117</color>
+
+    <color name="success_color">#3FB950</color>
+    <color name="error_color">#F85149</color>
+    <color name="warning_color">#D29922</color>
+    <color name="info_color">#58A6FF</color>
+
+    <!-- Muted Database Colors for Dark Mode -->
+    <color name="db_color_1">#1F6FEB</color>
+    <color name="db_color_2">#D29922</color>
+    <color name="db_color_3">#238636</color>
+    <color name="db_color_4">#8957E5</color>
+    <color name="db_color_5">#DA3633</color>
+    <color name="db_color_6">#2EA043</color>
+</resources>

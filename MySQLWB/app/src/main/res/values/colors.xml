@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Brand Colors - MySQL Workbench inspired -->
+    <color name="primary">#00758F</color>
+    <color name="primary_dark">#005A6E</color>
+    <color name="primary_light">#0097B2</color>
+    <color name="accent">#F29111</color>
+    <color name="accent_dark">#D17A0E</color>
+
+    <!-- Background Colors -->
+    <color name="background">#F0F2F5</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="surface_variant">#E4E9F0</color>
+    <color name="editor_bg">#0D1117</color>
+    <color name="editor_gutter">#161B22</color>
+
+    <!-- Text Colors -->
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#5A6478</color>
+    <color name="text_hint">#9BA3B0</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_dark">#E0E0E0</color>
+
+    <!-- Table Colors -->
+    <color name="table_header_bg">#1A6FAB</color>
+    <color name="table_header_text">#FFFFFF</color>
+    <color name="table_row_normal">#FFFFFF</color>
+    <color name="table_row_alternate">#F0F5FF</color>
+    <color name="table_border">#D0D9E8</color>
+    <color name="table_cell_text">#1A1A2E</color>
+
+    <!-- Status Colors -->
+    <color name="success_color">#2ECC71</color>
+    <color name="error_color">#E74C3C</color>
+    <color name="warning_color">#F39C12</color>
+    <color name="info_color">#3498DB</color>
+    <color name="null_value_color">#999999</color>
+
+    <!-- Syntax Highlighting -->
+    <color name="syntax_keyword">#569CD6</color>
+    <color name="syntax_function">#DCDCAA</color>
+    <color name="syntax_string">#CE9178</color>
+    <color name="syntax_number">#B5CEA8</color>
+    <color name="syntax_comment">#6A9955</color>
+    <color name="syntax_operator">#D4D4D4</color>
+
+    <!-- Card & Border -->
+    <color name="card_stroke">#DDE3EE</color>
+    <color name="divider">#E8ECF2</color>
+    <color name="ripple">#1A1A6FAB</color>
+
+    <!-- Database Card Colors -->
+    <color name="db_color_1">#1A6FAB</color>
+    <color name="db_color_2">#E8831A</color>
+    <color name="db_color_3">#27AE60</color>
+    <color name="db_color_4">#8E44AD</color>
+    <color name="db_color_5">#E74C3C</color>
+    <color name="db_color_6">#16A085</color>
+
+    <!-- Splash -->
+    <color name="splash_bg">#0D1B2A</color>
+    <color name="splash_gradient_end">#1A3A5C</color>
+
+    <!-- Toolbar gradient -->
+    <color name="toolbar_gradient_start">#1A6FAB</color>
+    <color name="toolbar_gradient_end">#0D4F80</color>
+
+    <!-- Dark mode variants -->
+    <color name="dark_background">#121212</color>
+    <color name="dark_surface">#1E1E1E</color>
+    <color name="dark_surface_variant">#2D2D2D</color>
+    <color name="dark_card">#252525</color>
+    <color name="dark_text_primary">#E8EAF0</color>
+    <color name="dark_text_secondary">#9BA3B5</color>
+    <color name="dark_divider">#333333</color>
+    <color name="dark_table_header">#1A4F7A</color>
+    <color name="dark_table_row">#1E2430</color>
+    <color name="dark_table_alternate">#222B38</color>
+</resources>

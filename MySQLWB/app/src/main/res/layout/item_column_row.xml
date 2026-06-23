@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/surface"
+    android:paddingVertical="4dp"
+    android:paddingHorizontal="8dp"
+    android:layout_marginVertical="1dp">
+
+    <!-- Column Name -->
+    <EditText
+        android:id="@+id/et_col_name"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="2.5"
+        android:hint="col_name"
+        android:textSize="12sp"
+        android:fontFamily="monospace"
+        android:inputType="text"
+        android:background="@drawable/bg_editor"
+        android:textColor="#D4D4D4"
+        android:textColorHint="#666666"
+        android:padding="6dp"
+        android:layout_marginEnd="4dp"/>
+
+    <!-- Data Type Spinner -->
+    <Spinner
+        android:id="@+id/spinner_type"
+        android:layout_width="0dp"
+        android:layout_height="36dp"
+        android:layout_weight="2"
+        android:layout_marginEnd="4dp"
+        android:background="@drawable/bg_editor"
+        android:padding="4dp"
+        android:spinnerMode="dropdown"/>
+
+    <!-- Primary Key checkbox -->
+    <CheckBox
+        android:id="@+id/cb_pk"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:text=""
+        android:scaleX="0.85"
+        android:scaleY="0.85"/>
+
+    <!-- Not Null checkbox -->
+    <CheckBox
+        android:id="@+id/cb_nn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:text=""
+        android:scaleX="0.85"
+        android:scaleY="0.85"/>
+
+    <!-- Auto Increment checkbox -->
+    <CheckBox
+        android:id="@+id/cb_ai"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:text=""
+        android:scaleX="0.85"
+        android:scaleY="0.85"/>
+
+    <!-- Delete Button -->
+    <ImageButton
+        android:id="@+id/btn_delete_col"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:src="@android:drawable/ic_delete"
+        android:tint="@color/error_color"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Delete column"
+        android:padding="4dp"/>
+
+</LinearLayout>

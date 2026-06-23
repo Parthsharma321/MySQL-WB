@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MySQL WB</string>
+    <string name="app_full_name">MySQL Workbench</string>
+    <string name="app_tagline">Mobile SQL Workspace</string>
+    <string name="app_version">v1.5.1</string>
+    <string name="app_description">Learn SQL, DBMS &amp; RDBMS</string>
+
+    <!-- Dashboard -->
+    <string name="databases">Databases</string>
+    <string name="no_databases">No databases yet.\nTap + to create your first database.</string>
+    <string name="create_database">Create Database</string>
+    <string name="new_query">New Query</string>
+    <string name="tutorials">Tutorials</string>
+    <string name="sql_reference">SQL Reference</string>
+    <string name="sample_databases">Sample DBs</string>
+    <string name="schema_explorer">Schema Explorer</string>
+
+    <!-- Query Editor -->
+    <string name="query_editor">Query Editor</string>
+    <string name="run_query">Run (▶)</string>
+    <string name="run_selected">Run Selected</string>
+    <string name="clear">Clear</string>
+    <string name="format_sql">Format SQL</string>
+    <string name="query_history_title">Query History</string>
+    <string name="saved_queries_title">Saved Queries</string>
+    <string name="output_panel">Output / Results</string>
+    <string name="no_db_selected">⚠ No database selected</string>
+    <string name="query_hint">-- Enter your SQL query here\n-- Example: SELECT * FROM students;\n\nSHOW TABLES;</string>
+
+    <!-- Table Designer -->
+    <string name="table_designer">Table Designer</string>
+    <string name="add_column">Add Column</string>
+    <string name="column_name">Column Name</string>
+    <string name="data_type">Data Type</string>
+    <string name="primary_key">Primary Key</string>
+    <string name="not_null">Not Null</string>
+    <string name="auto_increment">Auto Increment</string>
+    <string name="unique_constraint">Unique</string>
+    <string name="default_value">Default Value</string>
+
+    <!-- Actions -->
+    <string name="action_delete">Delete</string>
+    <string name="action_export">Export SQL</string>
+    <string name="action_backup">Backup</string>
+    <string name="action_rename">Rename</string>
+    <string name="action_open">Open</string>
+    <string name="action_restore">Restore</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="save">Save</string>
+    <string name="create">Create</string>
+    <string name="delete">Delete</string>
+    <string name="confirm">Confirm</string>
+
+    <!-- Settings -->
+    <string name="settings">Settings</string>
+    <string name="dark_mode">Dark Mode</string>
+    <string name="dark_mode_summary">Switch between light and dark theme</string>
+    <string name="font_size">Editor Font Size</string>
+    <string name="auto_complete">Auto-Complete Suggestions</string>
+    <string name="syntax_highlighting">Syntax Highlighting</string>
+    <string name="query_history_limit">History Limit</string>
+    <string name="clear_history">Clear Query History</string>
+    <string name="about">About MySQL WB</string>
+    <string name="version">Version 1.5.1</string>
+
+    <!-- Tutorials -->
+    <string name="what_is_sql">What is SQL?</string>
+    <string name="ddl_commands">DDL Commands</string>
+    <string name="dml_commands">DML Commands</string>
+    <string name="dql_commands">DQL Commands</string>
+    <string name="joins_tutorial">Understanding JOINs</string>
+    <string name="aggregate_functions">Aggregate Functions</string>
+
+    <!-- Errors -->
+    <string name="error_no_db">No database selected. Open or create a database first.</string>
+    <string name="error_empty_query">Please enter a SQL query to execute.</string>
+    <string name="error_export_failed">Failed to export database.</string>
+    <string name="error_backup_failed">Failed to backup database.</string>
+
+    <!-- Misc -->
+    <string name="copied_clipboard">Copied to clipboard</string>
+    <string name="query_saved">Query saved successfully</string>
+    <string name="db_created">Database created!</string>
+    <string name="db_deleted">Database deleted</string>
+    <string name="exported_to">Exported to Downloads folder</string>
+    <string name="offline_mode">🔒 Offline Mode — No server required</string>
+    <string name="powered_by">Powered by SQLite Engine</string>
+</resources>

@@ -1,0 +1,22 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+
+    <!-- Modern Dark DB Icon -->
+    <path
+        android:fillColor="#00ABCC"
+        android:pathData="M12,2 L21,7 L21,17 L12,22 L3,17 L3,7 Z"
+        android:fillAlpha="0.1"/>
+
+    <path
+        android:strokeColor="#00ABCC"
+        android:strokeWidth="1.2"
+        android:pathData="M12,4 L19,8 L19,16 L12,20 L5,16 L5,8 Z"/>
+
+    <!-- Small internal tiers -->
+    <path android:fillColor="#00ABCC" android:pathData="M8,10 L16,10 L15,11 L9,11 Z"/>
+    <path android:fillColor="#00ABCC" android:pathData="M8,13 L16,13 L15,14 L9,14 Z"/>
+
+</vector>

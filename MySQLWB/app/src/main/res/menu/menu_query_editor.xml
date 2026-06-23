@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_history"
+        android:title="History"
+        android:icon="@drawable/ic_history"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_saved_queries"
+        android:title="Saved Queries"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_schema"
+        android:title="Schema"
+        android:icon="@drawable/ic_schema"
+        app:showAsAction="ifRoom"/>
+
+    <item android:id="@+id/action_save_query"
+        android:title="Save Query"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_change_db"
+        android:title="Switch Database"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_copy_result"
+        android:title="Copy Results"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_table_designer"
+        android:title="Table Designer"
+        app:showAsAction="never"/>
+
+</menu>

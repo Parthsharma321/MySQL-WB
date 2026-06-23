@@ -1,0 +1,47 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="120dp"
+    android:height="120dp"
+    android:viewportWidth="120"
+    android:viewportHeight="120">
+
+    <!-- Outer Glow / Shadow -->
+    <path
+        android:fillColor="#1A00ABCC"
+        android:pathData="M60,10 C32,10 10,32 10,60 C10,88 32,110 60,110 C88,110 110,88 110,60 C110,32 88,10 60,10 Z"/>
+
+    <!-- Dark Shield/Hexagon Base -->
+    <path
+        android:fillColor="#161B22"
+        android:pathData="M60,15 L95,35 L95,85 L60,105 L25,85 L25,35 Z"/>
+
+    <!-- Inner Neon Outline -->
+    <path
+        android:strokeColor="#00ABCC"
+        android:strokeWidth="1.5"
+        android:pathData="M60,22 L88,38 L88,82 L60,98 L32,82 L32,38 Z"/>
+
+    <!-- Database Tiers (Modern Look) -->
+    <!-- Top Layer -->
+    <path
+        android:fillColor="#00ABCC"
+        android:pathData="M40,45 L80,45 L75,52 L45,52 Z"/>
+    <!-- Middle Layer -->
+    <path
+        android:fillColor="#00758F"
+        android:pathData="M40,58 L80,58 L75,65 L45,65 Z"/>
+    <!-- Bottom Layer -->
+    <path
+        android:fillColor="#005A6E"
+        android:pathData="M40,71 L80,71 L75,78 L45,78 Z"/>
+
+    <!-- Central SQL Symbol (Minimalist) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,32 L68,32 L68,34 L52,34 Z"/>
+
+    <!-- Neon Dot -->
+    <path
+        android:fillColor="#FFAD33"
+        android:pathData="M60,90 A3,3 0 1,0 60.01,90 Z"/>
+
+</vector>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_toggle_theme"
+        android:title="Toggle Theme"
+        android:icon="@android:drawable/ic_menu_gallery"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_history"
+        android:title="Query History"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_tutorials"
+        android:title="Tutorials"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_sql_ref"
+        android:title="SQL Reference"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/action_settings"
+        android:title="Settings"
+        app:showAsAction="never"/>
+
+</menu>
