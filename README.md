@@ -237,7 +237,7 @@ Contributions are welcome! Here's how to get started:
 
 ```bash
 # Fork the repo and clone your fork
-git clone https://github.com/yourusername/MySQLWB.git
+git clone https://github.com/Parthsharma321/MySQL-WB.git
 
 # Create a feature branch
 git checkout -b feature/your-feature-name
