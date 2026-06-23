@@ -22,7 +22,7 @@
 
 | Dashboard | Query Editor | Results | Schema Explorer |
 |-----------|-------------|---------|-----------------|
-| ![Dashboard](screenshots/dashboard.png) | ![Editor](screenshots/editor.png) | ![Results](screenshots/results.png) | ![Tutorial](screenshots/schema.png) |
+| ![Dashboard](screenshots/1.jpg) | ![Editor](screenshots/6.jpg) | ![Results](screenshots/3.jpg) | ![Tutorial](screenshots/4.jpg) |
 
 ---
 
