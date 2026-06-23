@@ -20,7 +20,7 @@
 
 ## 📱 Screenshots
 
-| Dashboard |    Query Editor   |   Results   |   Tutorial   |   Reference   |
+| Dashboard |      Query Editor     |      Results      |     Tutorial     |     Reference     |
 |---------------|-----------------|-------------|-------------------|--------------|
 |<img src="screenshots/1.jpg" width="160"/> | <img src="screenshots/6.jpg" width="160"/> | <img src="screenshots/3.jpg" width="160"/> | <img src="screenshots/4.jpg" width="160"/> | <img src="screenshots/6.jpg" width="160"/> |
 
