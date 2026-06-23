@@ -22,7 +22,7 @@
 
 | Dashboard |    Query Editor   |   Results   |   Tutorial   |
 |---------------|-----------------|-------------|-------------------|
-| ![Dashboard](screenshots/1.jpg) | ![Editor](screenshots/6.jpg) | ![Results](screenshots/3.jpg) | ![Tutorial](screenshots/4.jpg) |
+| ![Dashboard](<img src="screenshots/1.jpg" width="160"/>) | ![Editor](<img src="screenshots/6.jpg" width="160"/>) | ![Results](<img src="screenshots/3.jpg" width="160"/>) | ![Tutorial](<img src="screenshots/4.jpg" width="160"/>) |
 
 ---
 
