@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="app/src/main/res/drawable/ic_launcher.xml" width="120" height="120" alt="MySQL WB Logo"/>
+<img src="screenshots/Icon.png" width="120" height="120" alt="MySQL WB Logo"/>
 
 # 🗄️ MySQL WB — Mobile SQL Workspace
 
