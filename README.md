@@ -130,7 +130,7 @@ MySQL WB accepts **MySQL syntax** and automatically translates it to SQLite:
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/MySQLWB.git
+git clone https://github.com/Parthsharma321/MySQL-WB.git
 
 # Open in Android Studio
 # File → Open → select the MySQLWB folder
